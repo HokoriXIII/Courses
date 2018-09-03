@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+.title {
+  background: hsl(16, 100%, 45.3%);
+}
+.card {
+  padding: 30px;
+  background: orange;
+}
+.text {
+  /* color: rgba(188, 72, 72, 0.5);
+  background: #bada55; */
+}
+.gradient {
+  width: 200px;
+  height: 100px;
+  background-image: linear-gradient(to bottom left, #0b486b, #f56217);
+}
+.gradient-stages {
+  width: 200px;
+  height: 100px;
+  background-image: linear-gradient(
+    to left,
+    #0b486b 15%,
+    #f56217 35%,
+    #f11712 65%,
+    #0099f7
+  );
+}
+.gradient-radial {
+  margin-top: 40px;
+  width: 200px;
+  height: 100px;
+  background-image: radial-gradient(circle at center, #1488cc, #b31217);
+}
+.list {
+  list-style: none;
+  font-size: 30px;
+}
+.list li::first-letter {
+  color: rgb(155, 155, 155);
+}
+.list li::before {
+  content: "\2192";
+  /* background: #000;
+  color: aqua;
+  display: block;
+  width: 30px;
+  height: 30px; */
+}
+.list li::after {
+  content: "$";
+}
+.text::first-line {
+  font-size: 40px;
+}
+.text::selection {
+  background: #000;
+  color: white;
+}
+.float-container {
+  background: #f56217;
+  /* height: auto; */
+  /* overflow: hidden; */
+}
+.float-container img {
+  float: left;
+  /* width: 50px; */
+  height: 100px;
+  border-radius: 40%;
+  padding: 20px;
+}
+.cleafix-container {
+  background: black;
+}
+.cleafix-container img {
+  float: left;
+}
+.cfimg {
+  width: 40%;
+}
+.clearfix::after {  content: "";  display: table;  clear: both;
+}
