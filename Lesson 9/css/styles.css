@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 0 auto;
+}
+.flex-item {
+  background: red;
+  width: 200px;
+  height: 100px;
+  margin: 10px 30px;
+  padding: 0 15px;
+}
+.flex-container-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+}
+.flex-container-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.flex-container-justify {
+  justify-content: center;
+}
+.gallery {
+  display: flex;
+  height: 400px;
+  position: relative;
+}
+.gallery-item {
+  /* width: 50%;  */
+  /* margin: 10px; */
+  flex-grow: 1;
+  /* flex-shrink: 1; */
+  background-size: cover;
+  background-position: center center;
+  transition: flex-grow 1s;
+  flex-basis: 400px;
+  /* transition: flex-shrink 3s; */
+}
+.gallery-item:hover {
+  flex-grow: 2;
+  /* flex-shrink: 2; */
+}
+.gallery-item-1 {
+  background-image: url(http://marmazov.ru/wp-content/uploads/2017/05/kotiki.jpg);
+}
+.gallery-item-2 {
+  background-image: url(https://bipbap.ru/wp-content/uploads/2017/12/65620375-6b2b57fa5c7189ba4e3841d592bd5fc1-800-640x426.jpg);
+}
+.gallery-item-3 {
+  background-image: url(https://obovsem.pp.ua/wp-content/uploads/kotiki-40.jpg);
+}
+.gallery-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  text-transform: uppercase;
+  transform: translate(-50% -50%);
+  margin: 0;
+  color: #ffffff;
+}

@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Galano Semi Bold";
+}
+.title {
+}
+@font-face {
+  font-family: "Galano Semi Bold";
+  src: url("../fonts/GalanoGrotesque-SemiBold.woff") format("woff"),
+    url("../fonts/GalanoGrotesque-SemiBold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.master {
+  width: 1000px;
+  padding: 10px;
+  background: #fa2;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+}
+.slave {
+  padding: 5vw;
+  background: #2fa;
+  border: 1px solid #000;
+}
+.slave-name {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  border: 1px solid #000;
+}
+.slave-text {
+  font-size: 0.7em;
+  margin: 3em 0;
+  border: 1px solid #000;
+}
+.table{
+    width: 600px;
+    margin: 20px auto;
+}
+.table th, .table td{
+    border: 1px solid #000;
+    height: 50px;
+    /* width: 50%; */
+}
+
+.table1{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.table1 th, .table1 td{
+    border: 1px solid #000;
+    height: 50px;
+    /* width: 50%; */
+}
