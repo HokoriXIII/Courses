@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <h1>Form</h1>
+    <!-- action -адрес передачиинформации -->
+    <form action="#" method="GET">
+        <label for="email">Email</label>
+        <!-- name для input обязателен -->
+        <!-- required поле обязательно к заполнению -->
+        <!-- value значение по умолчанию -->
+        <input type="email" placeholder="Email" id="email" name="email" value="@gmail.com">
+
+        <input type="button" value="Type button">
+        <input type="submit" value="Type submit">
+        <div class="checkbox">
+            <label>
+                Checkbox1
+                <input type="checkbox" name="checkbox" id="checkbox" value="1">
+            </label>
+            <label>
+                Checkbox2
+                <input type="checkbox" name="checkbox" id="checkbox" value="2">
+            </label>
+            <label>
+                Checkbox3
+                <input type="checkbox" name="checkbox" id="checkbox" value="3">
+            </label>
+        </div>
+        <input type="file">
+        <div class="placeholder-decoration">
+            <label>login
+                <input type="text" placeholder="enter login">
+            </label>
+            <button type="button">Кнопочко</button>
+        </div>
+        <div class="radiobutton">
+            <input type="password" name="pass">
+
+        </div>
+        <div class="radiobutton">
+            <label>Radio
+                <input type="radio" name="radio">
+                <input type="radio" name="radio">
+                <input type="radio" name="radio">
+                <input type="radio" name="radio">
+            </label>
+        </div>
+        <input type="color">
+
+        <h2>Select</h2>
+        <select name="country" id="" required>
+            <option value="" selected disabled>Choose your country</option>
+            <option value="ukraine">Ukraine</option>
+            <option value="england">England</option>
+            <option value="denmark">Denmark</option>
+        </select>
+        <label class="textarea">iuiuh
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </label>
+        <button>Send</button>
+
+
+    </form>
+
+    <form action="#" class="test-form">
+        <input type="text" name="name" id="" placeholder="Your Name" class="name">
+        <input type="email" name="" id="" placeholder="Your Mail" class="email">
+        <textarea name="" id="" cols="20" rows="10" placeholder="Your Message" class="textarea"></textarea>
+        <button class="button">SEND</button>
+    </form>
+
+</body>
+
+</html>
