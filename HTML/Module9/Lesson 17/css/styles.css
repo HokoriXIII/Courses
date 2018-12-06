@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* .wrapper{
+    margin: 0 auto;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 15px 2%;
+}
+.grid-item{
+    background: purple;
+}
+.grid-item-big{    
+    grid-area: card-big;
+    background: green;
+}
+.grid-item-small{
+    grid-area: card-small;
+    background: yellow;
+}
+.grid-item-medium{
+    grid-area: card-medium;
+    background: red;
+}
+.grid-template-container{
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas: 
+    'card-big card-big card-small card-small'
+    'card-big card-big card-small card-small'
+} */
+.gallery {
+  display: grid;
+  height: 100vh;
+  background: #000;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+.gallery-item-1 {
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
+  background: green;
+  background-image: url(https://cs8.pikabu.ru/post_img/big/2016/06/17/12/1466194380184179621.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.gallery-item-2 {
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+  background: pink;
+  background-image: url(https://74.img.avito.st/640x480/4093188974.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.gallery-item-3{
+    background: yellow;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-image: url(http://bm.img.com.ua/nxs/img/prikol/images/large/5/1/136215.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gallery-item-4{
+    background: fuchsia;
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    background-image: url(https://cs21.babysfera.ru/c/8/9/1/33016368.123265843.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gallery-item-5{
+    background: violet;
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+    background-image: url(http://mtdata.ru/u4/photo4D5C/20272959222-0/original.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gallery-item-6{
+    background: darkblue;
+    grid-column: 4 / 5;
+    grid-row: 2 / 5;
+    background-image: url(https://www.pitomec.ru/upload/userfiles/images/_MG_5798.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

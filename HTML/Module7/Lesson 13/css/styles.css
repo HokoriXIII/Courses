@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+input{
+    color: inherit;
+}
+.placeholder-decoration {
+  margin-top: 30px;
+  color: green;
+}
+.placeholder-decoration input::placeholder {
+  color: blue;
+}
+.textarea{
+    font-size: 25px;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.textarea{
+font-family: inherit
+}
+
+.test-form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border: 1px solid gray;
+    padding: 1em;
+    box-shadow: 1px 1px 1px 1px #000; 
+}
+.test-form input::placeholder ,
+.test-form textarea::placeholder{
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+  }
+.name, .email, .textarea, .button
+{
+    padding: 1em;
+}
+.button{
+    border: none;
+}
+.test-form .button{
+    width: 200px;
+    background: red;
+    color: #fff;
+    margin: 1em auto;
+    
+}

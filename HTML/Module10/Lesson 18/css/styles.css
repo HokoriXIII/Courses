@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.img-stroke {
+  width: 100px;
+  height: 100px;
+}
+.inline-svg {
+  width: 200px;
+  height: auto;
+  transition: fill 0.6s, stroke-width 0.6s, stroke-dashoffset 2.2s;
+  stroke: chartreuse;
+  stroke-width: 3;
+  stroke-dasharray: 555 555;
+  stroke-dashoffset: 555;
+  animation: anim 2s alternate infinite;
+}
+.inline-svg:hover {
+  fill: purple;
+  stroke-width: 6;
+  stroke-dashoffset: 0;
+}
+@keyframes anim {
+  from {
+    stroke-dashoffset: 555;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.object-svg{
+    
+}

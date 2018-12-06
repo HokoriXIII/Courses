@@ -1,0 +1,14 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: $main-color;
+  color: #fff;
+
+  &__logo {
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

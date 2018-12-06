@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+.position-example {
+  position: relative;
+  width: 300px;
+  padding: 1em;
+  background: pink;
+  top: -30px;
+  left: 60px;
+}
+.relative-cont {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: yellowgreen;
+  left: 60px;
+}
+.relative-cont::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  background: green;
+  z-index: 5;
+}
+.absolute-cont {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background: #000;
+  /* left: -60px; */
+  right: 5px;
+  top: 5px;
+  /* z-index: -1; */
+}
+.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: crimson;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header-list {
+  list-style: none;
+}
+.header-item {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.header-item a {
+  padding: 0 15px;
+  text-decoration: none;
+}
+.header-item:hover a {
+  color: #fff;
+}
+.sublist {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  list-style: none;
+  padding-left: 0;
+  background: crimson;
+  width: 100%;
+}
+.header-item:hover .sublist {
+  display: block;
+}
+
+.inner {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: dodgerblue;
+}
+.inner img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.tl {
+  top: 0;
+  left: 0;
+}
+.tr {
+  top: 0;
+  right: 0;
+}
+.bl {
+  bottom: 0;
+  left: 0;
+}
+.br {
+  bottom: 0;
+  right: 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 5px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  z-index: 1;
+}
